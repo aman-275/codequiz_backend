@@ -233,9 +233,6 @@ STATIC_ROOT  =   BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 
 # Extra lookup directories for collectstatic to find static files
-STATICFILES_DIRS = (
-   BASE_DIR / 'static'
-)
-
+STATICFILES_DIRS =STATICFILES_DIRS = [BASE_DIR / 'static',]
 #  Add configuration for static files storage using whitenoise
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
