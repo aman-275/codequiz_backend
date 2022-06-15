@@ -235,7 +235,7 @@ STATIC_URL = '/static/'
 
 # Extra lookup directories for collectstatic to find static files
 STATICFILES_DIRS = (
-   str(BASE_DIR / 'static'),
+   os.path.join(BASE_DIR, 'postlife_backend/static'),
 )
 
 #  Add configuration for static files storage using whitenoise
