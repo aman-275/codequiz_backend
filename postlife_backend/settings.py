@@ -234,7 +234,7 @@ STATIC_URL = '/static/'
 
 # Extra lookup directories for collectstatic to find static files
 STATICFILES_DIRS = (
-   str(BASE_DIR / 'static')
+   str(BASE_DIR / 'static'),
 )
 
 #  Add configuration for static files storage using whitenoise
