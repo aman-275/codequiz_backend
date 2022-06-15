@@ -229,12 +229,12 @@ REST_AUTH_TOKEN_MODEL = None
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-STATIC_ROOT  =   BASE_DIR / 'staticfiles'
+STATIC_ROOT  =   str(BASE_DIR / 'staticfiles')
 STATIC_URL = '/static/'
 
 # Extra lookup directories for collectstatic to find static files
 STATICFILES_DIRS = (
-   BASE_DIR / 'static'
+   str(BASE_DIR / 'static')
 )
 
 #  Add configuration for static files storage using whitenoise
