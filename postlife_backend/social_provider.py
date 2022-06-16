@@ -7,5 +7,5 @@ class GoogleLogin(
     SocialLoginView
 ):  # if you want to use Authorization Code Grant, use this
     adapter_class = GoogleOAuth2Adapter
-    callback_url = "http://localhost:3000/registration"
+    callback_url = "https://codequiz-frontend.vercel.app/registration" # update this to config file
     client_class = OAuth2Client
