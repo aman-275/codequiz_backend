@@ -233,6 +233,8 @@ REST_AUTH_TOKEN_MODEL = None
 STATIC_ROOT  =   str(BASE_DIR / 'staticfiles')
 STATIC_URL = '/static/'
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
 # Extra lookup directories for collectstatic to find static files
 
 
